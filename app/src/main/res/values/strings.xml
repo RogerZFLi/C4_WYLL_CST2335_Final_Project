@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">C4_CST2335_Final_Project</string>
+    <string name="app1_name">Food Nutrition</string>
+    <string name="app2_name">CBC  News Reader</string>
+    <string name="app3_name">Movies Information</string>
+    <string name="app4_name">OCTranspo Bus Route</string>
+</resources>
