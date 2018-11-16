@@ -1,3 +1,7 @@
+
+/build
+/.idea
+
 # Built application files
 *.apk
 *.ap_
@@ -59,3 +63,4 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
