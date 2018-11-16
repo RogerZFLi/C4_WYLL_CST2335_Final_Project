@@ -20,10 +20,11 @@
 
         </activity>
         <activity android:name=".FoodNutritionDatabaseActivity" />
-        <activity android:name=".CBCNewsReaderActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
+        <activity android:name=".CBCNewsReaderActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
-        <activity android:name=".MovieInformationActivity" />
+        <activity android:name=".MovieInformationActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".OCTranspoBusRouteActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".OCTranspoRouteDetails"></activity>
