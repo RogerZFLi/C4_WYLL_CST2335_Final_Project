@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.amusu.teamname_cst2335_final_project">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,11 +17,16 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity android:name=".FoodNutritionDatabaseActivity" />
-        <activity android:name=".CBCNewsReaderActivity" />
+        <activity android:name=".CBCNewsReaderActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        </activity>
         <activity android:name=".MovieInformationActivity" />
-        <activity android:name=".OCTranspoBusRouteActivity"></activity>
+        <activity android:name=".OCTranspoBusRouteActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".OCTranspoRouteDetails"></activity>
     </application>
 
 </manifest>
