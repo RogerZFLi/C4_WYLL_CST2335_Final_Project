@@ -22,10 +22,9 @@
 
         <activity android:name=".FoodNutritionDatabaseActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
-        <activity android:name=".MovieInformationActivity" />
 
 
-        <activity android:name=".FoodNutritionDatabaseActivity" />
+
         <activity android:name=".CBCNewsReaderActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
