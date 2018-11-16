@@ -21,15 +21,12 @@
         </activity>
 
         <activity android:name=".FoodNutritionDatabaseActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".CBCNewsReaderActivity" />
-        <activity android:name=".MovieInformationActivity" />
-        <activity android:name=".OCTranspoBusRouteActivity" />
 
-        <activity android:name=".FoodNutritionDatabaseActivity" />
+        <activity android:name=".MovieInformationActivity" />
+
         <activity android:name=".CBCNewsReaderActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
-        <activity android:name=".MovieInformationActivity" />
         <activity android:name=".OCTranspoBusRouteActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".OCTranspoRouteDetails"></activity>

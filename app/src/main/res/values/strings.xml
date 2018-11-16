@@ -5,8 +5,7 @@
     <string name="app3_name">Movie Information</string>
     <string name="app4_name">OCTranspo Bus Route</string>
 
-    <string name="dialog_message">Are you sure you want to finish the activity</string>
-    <string name="dialog_title">Close</string>
+
 
     <string name="movie_searchBtnText">Search</string>
 
