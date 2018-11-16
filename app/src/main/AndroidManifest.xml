@@ -16,10 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FoodNutritionDatabaseActivity" />
+        <activity android:name=".FoodNutritionDatabaseActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".CBCNewsReaderActivity" />
         <activity android:name=".MovieInformationActivity" />
-        <activity android:name=".OCTranspoBusRouteActivity"></activity>
+        <activity android:name=".OCTranspoBusRouteActivity" />
+
     </application>
 
 </manifest>

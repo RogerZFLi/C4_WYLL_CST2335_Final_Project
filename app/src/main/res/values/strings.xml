@@ -4,4 +4,8 @@
     <string name="app2_name">CBC  News Reader</string>
     <string name="app3_name">Movies Information</string>
     <string name="app4_name">OCTranspo Bus Route</string>
+    <string name="dialog_message">Are you sure you want to finish the activity</string>
+    <string name="dialog_title">Close</string>
+    <string name="OK">OK</string>
+    <string name="cancel">Cancel</string>
 </resources>
