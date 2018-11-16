@@ -18,8 +18,11 @@
         </activity>
         <activity android:name=".FoodNutritionDatabaseActivity" />
         <activity android:name=".CBCNewsReaderActivity" />
-        <activity android:name=".MovieInformationActivity" />
-        <activity android:name=".OCTranspoBusRouteActivity"></activity>
+        <activity
+            android:name=".MovieInformationActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".OCTranspoBusRouteActivity" />
+        <activity android:name=".MovieListItemsActivity"></activity>
     </application>
 
 </manifest>
