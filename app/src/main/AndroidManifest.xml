@@ -30,6 +30,7 @@
         </activity>
         <activity android:name=".MovieInformationActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
         <activity android:name=".OCTranspoBusRouteActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".OCTranspoRouteDetails"></activity>
