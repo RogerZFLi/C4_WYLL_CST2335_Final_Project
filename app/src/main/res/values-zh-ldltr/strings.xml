@@ -15,4 +15,9 @@
     <string name="OK">确定</string>
 
     <string name="cancel">取消</string>
+
+
+    <!--食物营养查询-->
+    <string name="jsonDL">数据下载中。。。</string>
+    <string name="Error">请输入有效的食品名称（比如： 牛肉）</string>
 </resources>

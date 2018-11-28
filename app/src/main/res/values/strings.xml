@@ -17,4 +17,9 @@
 
     <string name="OK">OK</string>
     <string name="cancel">Cancel</string>
+
+
+    <!--Food nutrition-->
+    <string name="jsonDL">Json Data is downloading</string>
+    <string name="Error">Enter a valid food item name (eg: beef)</string>
 </resources>

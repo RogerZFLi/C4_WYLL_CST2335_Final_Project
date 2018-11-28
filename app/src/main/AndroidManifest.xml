@@ -20,7 +20,7 @@
 
         </activity>
 
-        <activity android:name=".FoodNutritionDatabaseActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name=".FoodNutrition.FoodMainActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
 
 
