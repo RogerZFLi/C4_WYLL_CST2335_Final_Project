@@ -3,13 +3,13 @@ package com.example.amusu.teamname_cst2335_final_project.FoodNutrition;
 import android.content.Context;
 import android.graphics.Color;
 import android.os.AsyncTask;
-import android.support.design.widget.Snackbar;
+
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ProgressBar;
-import android.widget.SimpleAdapter;
+
 import android.widget.Toast;
 
 import com.example.amusu.teamname_cst2335_final_project.R;
@@ -87,29 +87,29 @@ public class MyTask extends AsyncTask<String, Integer, String>  {
                     // Pulling items from the array
                     String  label = foodObject.getString("label");
                     //打印 LABEL
-                    Log.e("label ========", label);
+
                     publishProgress(20);
                     JSONObject nutriObject = foodObject.getJSONObject("nutrients");
                     Log.i(ACTIVITY_NAME, nutriObject.toString());
                     publishProgress(60);
                     String calorieValue = nutriObject.getString("ENERC_KCAL");
-                    Log.e("ENERC_KCAL ========", calorieValue);
+
                     publishProgress(80);
                     String  fatValue = nutriObject.getString("FAT");
-                    Log.e("FAT ========", fatValue);
+
                     publishProgress(90);
                     String  carbValue = nutriObject.getString("CHOCDF");
-                    Log.e("CHOCDF ========", carbValue);
+
                     publishProgress(100);
 
                     HashMap<String, String> food = new HashMap<>();
                     food.put("Label", label);
                     food.put("Calories", "Calories: "+ formatOutput(calorieValue) );
-                    Log.e("Calories ===转换后=====", formatOutput(calorieValue));
+
                     food.put("Fat", "Fat: " + formatOutput(fatValue) + "g");
-                    Log.e("Fat ===转换后=====", formatOutput(fatValue));
+
                     food.put("Carbs", "Carb: " + formatOutput(carbValue)+ "g");
-                    Log.e("Carbs ====转换后====", formatOutput(carbValue));
+
                     foodItemList.add(food);
 
                 } catch (JSONException e) {
@@ -140,11 +140,7 @@ public class MyTask extends AsyncTask<String, Integer, String>  {
             toast.show();
         }else{
 
-            /*adapter = new SimpleAdapter(FoodActivity.this, foodItemList,
-                    R.layout.food_info, new String[]{ "Label","Calories", "Fat", "Carbs"},
-                    new int[]{R.id.foodLabel, R.id.caloriesV, R.id.fatV, R.id.carbsV});*/
 
-            /*list.setAdapter(adapter);*/
             adapter.notifyDataSetChanged();
 
         }
