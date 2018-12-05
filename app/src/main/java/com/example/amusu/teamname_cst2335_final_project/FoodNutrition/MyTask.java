@@ -31,32 +31,27 @@ public class MyTask extends AsyncTask<String, Integer, String>  {
 
     private static final  String ACTIVITY_NAME = "MYTASK";
     JSONArray jArray;
-    private Context mainPage;
+    private Context mPage;
     private ArrayList<HashMap<String, String>> foodItemList;
     private String text;
     private ProgressBar progress;
     private ArrayAdapter adapter;
 
    public MyTask(Context ctx, ArrayList<HashMap<String, String>> list, ProgressBar pbar, ArrayAdapter adapter){
-       mainPage = ctx;
+       mPage = ctx;
        foodItemList = list;
        progress = pbar;
        this.adapter = adapter;
-
     }
 
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
-        /*Snackbar.make(((FoodMainActivity) mainPage).findViewById(android.R.id.content),R.string.jsonDL, Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show();*/
-
-
     }
 
     @Override
     protected String doInBackground(String... strings) {
-        //whenever new search, clear list first
+
         foodItemList.clear();
             text = strings[0];
         try {
@@ -74,19 +69,16 @@ public class MyTask extends AsyncTask<String, Integer, String>  {
             String result = jsonResults.toString();
 
 
-
             JSONObject jsonObj = new JSONObject(result);
             publishProgress(20);
 
-            jArray = jsonObj.getJSONArray("hints");
+            jArray = jsonObj.getJSONArray("parsed");
 
             for (int index = 0; index < jArray.length(); index++)
                 try {
                     JSONObject indexObject = jArray.getJSONObject(index);
                     JSONObject foodObject = indexObject.getJSONObject("food");
-                    // Pulling items from the array
                     String  label = foodObject.getString("label");
-                    //打印 LABEL
 
                     publishProgress(20);
                     JSONObject nutriObject = foodObject.getJSONObject("nutrients");
@@ -99,27 +91,25 @@ public class MyTask extends AsyncTask<String, Integer, String>  {
 
                     publishProgress(90);
                     String  carbValue = nutriObject.getString("CHOCDF");
-
+                    String  ferbri = nutriObject.getString("FIBTG");
                     publishProgress(100);
 
                     HashMap<String, String> food = new HashMap<>();
                     food.put("Label", label);
                     food.put("Calories", "Calories: "+ formatOutput(calorieValue) );
-
                     food.put("Fat", "Fat: " + formatOutput(fatValue) + "g");
-
                     food.put("Carbs", "Carb: " + formatOutput(carbValue)+ "g");
-
+                    food.put("Fiber", "Fiber: " + formatOutput(ferbri)+ "g");
                     foodItemList.add(food);
-
+Log.e("read URL loadind map", food.toString());
                 } catch (JSONException e) {
-                    // Oops
+
                 }
         }catch (Exception e)
         {
-            Log.i("Exception", e.getMessage());
+            Log.i("error", e.getMessage());
         }
-        return "done";
+        return "okay";
     }
 
 
@@ -133,27 +123,23 @@ public class MyTask extends AsyncTask<String, Integer, String>  {
     public void onPostExecute(String s){
         super.onPostExecute(s);
         if (jArray == null || jArray.isNull(0)) {
-            Toast toast = Toast.makeText(mainPage, R.string.Error, Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(mPage, "Error", Toast.LENGTH_LONG);
             toast.setGravity(Gravity.CENTER_VERTICAL|Gravity.CENTER_HORIZONTAL, 0, 0);
             View view = toast.getView();
             view.setBackgroundColor(Color.RED);
             toast.show();
         }else{
-
-
             adapter.notifyDataSetChanged();
-
         }
         progress.setVisibility(View.INVISIBLE);
     }
 
 
-
-    private String formatOutput(String ss){
-        Double dec = Double.parseDouble(ss);
+    private String formatOutput(String str){
+        Double d = Double.parseDouble(str);
 
         DecimalFormat df = new DecimalFormat("##.00");
-        return ""+df.format(dec);
+        return ""+df.format(d);
     }
 
 }

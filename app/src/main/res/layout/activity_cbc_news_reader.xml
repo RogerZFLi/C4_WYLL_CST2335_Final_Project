@@ -9,7 +9,6 @@
         android:id="@+id/searchBoxes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         />
 
 
@@ -17,8 +16,6 @@
         android:id="@+id/save_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-
         android:text="@string/CBC_btn1" />
 
     <Button
@@ -33,7 +30,6 @@
         android:id="@+id/back_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
         android:text="@string/CBC_btn3" />
 
     <ListView
@@ -49,12 +45,8 @@
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-
-
         android:gravity="bottom"
         android:visibility="invisible" />
-
-
 
 
 </LinearLayout>

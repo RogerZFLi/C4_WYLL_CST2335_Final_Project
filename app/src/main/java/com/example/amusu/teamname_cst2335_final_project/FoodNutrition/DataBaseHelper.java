@@ -18,13 +18,13 @@ public class DataBaseHelper extends SQLiteOpenHelper {
     static String DATABASE_NAME = "Favorites.db";
     static int VERSION_NUM = 1;
     final static String KEY_ID = "_id";
-    final static String KEY_LABEL = "Label";
+    final static String KEY_NAME = "name";
     final static String KEY_CALORIES = "Calories";
     final static String KEY_FAT = "Fat";
     final static String KEY_CARBS = "Carbs";
+    final static String KEY_FIBER = "fiber";
     final static String TABLE_NAME = "Favorites";
-    final static String creatTable = "CREATE TABLE " + TABLE_NAME +"("+ KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT , "+ KEY_LABEL +" TEXT NOT NULL, "+ KEY_CALORIES +" TEXT NOT NULL, "+ KEY_FAT +" TEXT NOT NULL, " + KEY_CARBS +  " TEXT NOT NULL);";
-
+    final static String creatTable = "CREATE TABLE " + TABLE_NAME +"("+ KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT , "+ KEY_NAME +" TEXT NOT NULL, "+ KEY_CALORIES +" TEXT NOT NULL, "+ KEY_FAT +" TEXT NOT NULL, " + KEY_CARBS +  " TEXT NOT NULL, " + KEY_FIBER + " TEXT NOT NULL);";
 
     /**
      * Constructor: sets up the initial database
@@ -52,15 +52,14 @@ public class DataBaseHelper extends SQLiteOpenHelper {
      */
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        Log.i("FoodDatabaseHelper", "Calling onUpgrade, oldVersion=" + oldVersion + " newVersion=" + newVersion);
+        Log.i("FoodDatabaseHelper", "Calling onUpgrade, oldVersion is" + oldVersion + " newVersion is" + newVersion);
         db.execSQL("DROP TABLE IF EXISTS "+ TABLE_NAME);
         onCreate(db);
-        Log.i(ACTIVITY_NAME, "Calling onUpgrade, Old version = " + oldVersion + " New version = " + newVersion);
+        Log.i(ACTIVITY_NAME, "Calling onUpgrade, Old version is " + oldVersion + " New version is " + newVersion);
     }
 
     @Override
     public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         onUpgrade(db, oldVersion, newVersion);
     }
-
 }

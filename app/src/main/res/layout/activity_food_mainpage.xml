@@ -29,14 +29,23 @@
             android:layout_toRightOf="@+id/searchBox"
             android:layout_alignBottom="@+id/searchBox"
             android:text="search" />
-
+<LinearLayout
+    android:layout_below="@+id/searchBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
         <Button
             android:id="@+id/favourite"
-            android:layout_width="match_parent"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="favorite list"
-            android:layout_below="@+id/searchBox"/>
-
+            />
+    <Button
+        android:id="@+id/about"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="about"
+        />
+</LinearLayout>
         </RelativeLayout>
     </FrameLayout>
 
