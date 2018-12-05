@@ -22,8 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FoodNutritionDatabaseActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+
+      <!--  <activity android:name=".FoodNutritionDatabaseActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>  -->
+
+        <activity
+            android:name=".FoodNutrition.FoodMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".CBCNewsReaderActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -35,6 +40,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".OCTranspoRouteDetails" />
 
+
         <activity android:name=".movie.MovieDetailActivity" />
 
         <provider
@@ -43,6 +49,10 @@
             android:enabled="true"
             android:protectionLevel="signature"
             android:exported="false" />
+
+     <!--   <activity android:name=".FoodNutrition.FoodFragment" />  -->
+        <activity android:name=".FoodNutrition.activity_food_help"></activity>
+
     </application>
 
 </manifest>

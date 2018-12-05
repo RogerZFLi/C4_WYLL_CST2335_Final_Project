@@ -4,7 +4,13 @@
     <string name="app2_name">CBC  News Reader</string>
     <string name="app3_name">Movie Information</string>
     <string name="app4_name">OCTranspo Bus Route</string>
+<<<<<<< HEAD
     <string name="test1">test merge</string>
+=======
+
+
+    <string name="movie_searchBtnText">Search</string>
+>>>>>>> master
 
     <string name="CBC_btn1">Save</string>
     <string name="CBC_btn2">Search</string>
@@ -14,6 +20,7 @@
     <string name="OK">OK</string>
     <string name="cancel">Cancel</string>
 
+<<<<<<< HEAD
     <!--Movie Activity string-->
     <string name="statistics">Statistics </string>
     <string name="shortest_runtime">Shortest:  *</string>
@@ -55,3 +62,13 @@
 
 
 </resources>
+=======
+    <string name="jsonDL">Json Data is downloading</string>
+    <string name="Error">Enter a valid food item name (eg: beef)</string>
+    <string name="authorInfo">Written by Chao Wang</string>
+    <string name="versionInfo">1.03</string>
+    <string name="instructionsFood">This app allows user to search for a certain food and display its information,
+        the user can also add their favorite food to the database by tap the button so that the data of that food can be retrived anytime.</string>
+    <string name="favAdded">Add food to favorites</string>
+</resources>
+>>>>>>> master

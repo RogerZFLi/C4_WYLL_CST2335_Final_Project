@@ -8,6 +8,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.Loader;
 import android.database.Cursor;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.text.TextUtils;
@@ -137,8 +138,8 @@ public class MovieInformationActivity extends AppCompatActivity implements Loade
                 startActivity(intent2);
                 break;
             case R.id.movie_food:
-                Intent intent3 = new Intent(MovieInformationActivity.this, FoodNutritionDatabaseActivity.class);
-                startActivity(intent3);
+               // Intent intent3 = new Intent(MovieInformationActivity.this, FoodNutritionDatabaseActivity.class);
+               // startActivity(intent3);
                 break;
             case R.id.movie_about:
                 //Toast.makeText(this,R.string.aboutInfo, Toast.LENGTH_SHORT).show();

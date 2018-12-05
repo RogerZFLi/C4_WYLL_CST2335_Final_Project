@@ -7,6 +7,10 @@
     <string name="app4_name">OCTranspo公交路线</string>
     <string name="test1">test merge</string>
 
+<<<<<<< HEAD
+=======
+    <string name="movie_searchBtnText">搜索</string>
+>>>>>>> master
     <string name="CBC_btn1">保存</string>
     <string name="CBC_btn2">搜索</string>
     <string name="CBC_btn3">返回</string>
@@ -15,6 +19,7 @@
     <string name="OK">确定</string>
     <string name="cancel">取消</string>
 
+<<<<<<< HEAD
     <!--Movie Activity string-->
     <string name="shortest_runtime">最短</string>
     <string name="average_runtime">平均</string>
@@ -54,4 +59,13 @@
     <string name="hello_blank_fragment">你好片断</string>
     <!--Movie Activity string-->
 
+=======
+
+    <string name="jsonDL">数据下载中。。。</string>
+    <string name="Error">请输入有效的食品名称（比如： 牛肉）</string>
+    <string name="authorInfo">作者：王超</string>
+    <string name="versionInfo">1.03</string>
+    <string name="instructionsFood">欢迎来到食物营养数据库，用户可以通过本软件查询自己喜欢的食物并得到信息，点击过的食物将会被添加到数据库.</string>
+    <string name="favAdded">添加到收藏夹</string>
+>>>>>>> master
 </resources>
