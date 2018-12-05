@@ -5,7 +5,8 @@
     <string name="app2_name">CBC新闻读取器</string>
     <string name="app3_name">电影信息</string>
     <string name="app4_name">OCTranspo公交路线</string>
-    <string name="movie_searchBtnText">搜索</string>
+    <string name="test1">test merge</string>
+
     <string name="CBC_btn1">保存</string>
     <string name="CBC_btn2">搜索</string>
     <string name="CBC_btn3">返回</string>
@@ -13,4 +14,44 @@
     <string name="dialog_title">返回主菜单</string>
     <string name="OK">确定</string>
     <string name="cancel">取消</string>
+
+    <!--Movie Activity string-->
+    <string name="shortest_runtime">最短</string>
+    <string name="average_runtime">平均</string>
+    <string name="longest_runtime">最长</string>
+    <string name="runtime_summary">%1$d分鍾, %2$s, %3$s</string>
+    <string name="movie_title">片名</string>
+    <string name="movie_year">年份</string>
+    <string name="movie_plot">劇情</string>
+    <string name="movie_description">概述</string>
+    <string name="delete">刪除</string>
+    <string name="save">保存</string>
+    <string name="help">幫助</string>
+    <string name="aboutInfo">作者:: Jinlai Li; 版本: 1.0</string>
+    <string name="movie_help_message">使用:\n1. 单击显示详情\n2. 长按删除电影\n3. 输入片名搜索</string>
+    <string name="cd_poster">海报</string>
+    <string name="cd_help">帮助</string>
+    <string name="cd_thumbnail">简图</string>
+    <string name="runtime_average">%1$d分鍾</string>
+    <string name="movie_confirm_delete">确认删除电影 %1$s?</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="movie_runtime">片长</string>
+    <string name="movie_rating">影评</string>
+    <string name="movie_actors">演员</string>
+    <string name="ok">OK</string>
+    <string name="movie_search_title">搜索片名</string>
+    <string name="movie_deleted">电影 %1$s 删除</string>
+    <string name="movie_not_found">电影没有找到</string>
+    <string name="statistics">统计 </string>
+    <string name="activity_Food">食品数据</string>
+    <string name="activity_News">CBC新闻阅读</string>
+    <string name="activity_Movie">电影信息</string>
+    <string name="activity_Bus">OCTranspo公交线路</string>
+    <string name="movie_about">关于</string>
+    <string name="movieSearchBtn">搜索电影</string>
+    <string name="movieBackToMain">回主菜单</string>
+    <string name="hello_blank_fragment">你好片断</string>
+    <!--Movie Activity string-->
+
 </resources>
