@@ -17,6 +17,9 @@ public class MainActivity extends Activity {
         final Button CBC_NEWS_READER = findViewById(R.id.cbc_news_reader);
         final Button MOVIE_INFORMATION = findViewById(R.id.movie_information);
         final Button OCTRANSPO_BUS_ROUTE = findViewById(R.id.octranspo_bus_route);
+
+
+
         FOOD_NUTRITION_DATABASE.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

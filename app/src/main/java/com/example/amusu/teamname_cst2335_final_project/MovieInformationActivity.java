@@ -395,3 +395,5 @@ public class MovieInformationActivity extends AppCompatActivity implements Loade
         alert11.show();
     }
 }
+
+
