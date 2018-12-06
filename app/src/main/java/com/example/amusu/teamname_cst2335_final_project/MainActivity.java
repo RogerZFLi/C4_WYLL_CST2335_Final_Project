@@ -6,9 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
 import com.example.amusu.teamname_cst2335_final_project.rogerli.octranspo.OCTranspoBusRouteActivity;
 
+import com.example.amusu.teamname_cst2335_final_project.FoodNutrition.FoodMainActivity;
+import com.example.amusu.teamname_cst2335_final_project.movie.MovieInformationActivity;
+
+
+
 public class MainActivity extends Activity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,16 +30,16 @@ public class MainActivity extends Activity {
 
 
         FOOD_NUTRITION_DATABASE.setOnClickListener(new View.OnClickListener() {
-            @Override
+                @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,FoodNutritionDatabaseActivity.class));
+                startActivity(new Intent(MainActivity.this,FoodMainActivity.class));
             }
         });
 
         CBC_NEWS_READER.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,CBCNewsReaderActivity.class));
+                startActivity(new Intent(MainActivity.this,CBCMainActivity.class));
             }
         });
 
