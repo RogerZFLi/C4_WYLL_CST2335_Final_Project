@@ -10,8 +10,14 @@
     <string name="CBC_btn3">返回</string>
     <string name="dialog_message">确定要返回初始菜单吗</string>
     <string name="dialog_title">返回主菜单</string>
-    <string name="OK">确定</string>
     <string name="cancel">取消</string>
+    <string name="CBC_image">图片和简介</string>
+    <string name="CBC_GOLINK">完整网页</string>
+    <string name="CBC_statistical">统计</string>
+    <string name="CBC_addnews">添加</string>
+
+
+
 
 
 

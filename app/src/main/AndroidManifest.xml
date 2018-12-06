@@ -20,13 +20,23 @@
 
         </activity>
         <activity android:name=".FoodNutritionDatabaseActivity" />
-        <activity android:name=".CBCNewsReaderActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        </activity>
         <activity android:name=".MovieInformationActivity" />
         <activity android:name=".OCTranspoBusRouteActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".OCTranspoRouteDetails"></activity>
+        <activity
+            android:name=".CbcDetailActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".CbcDetailWeb"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".CBClocalTotalActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".CBCMainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
     </application>
 
 </manifest>

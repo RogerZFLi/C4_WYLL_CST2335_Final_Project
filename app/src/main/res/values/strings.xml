@@ -9,8 +9,19 @@
     <string name="CBC_btn3">back</string>
     <string name="dialog_message">Are you should you want to back to main page?</string>
     <string name="dialog_title">Back to main</string>
-    <string name="OK">OK</string>
-    <string name="cancel">Cancel</string>
+    <string name="cancel">cancel</string>
+
+
+    <string name="CBC_image">Image and short intro</string>
+    <string name="CBC_GOLINK">Go Link</string>
+    <string name="CBC_statistical">Statistical</string>
+    <string name="CBC_addnews">add</string>
+
+
+
+
+
+
 
 
 
