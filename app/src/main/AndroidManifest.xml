@@ -3,6 +3,9 @@
     package="com.example.amusu.teamname_cst2335_final_project">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
 
     <application
         android:allowBackup="true"
@@ -19,23 +22,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--  <activity android:name=".FoodNutritionDatabaseActivity"
+              android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>  -->
+
         <activity
-            android:name=".FoodNutritionDatabaseActivity"
+            android:name=".FoodNutrition.FoodMainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".CBCNewsReaderActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
-            android:name=".MovieInformationActivity"
+            android:name=".movie.MovieInformationActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".rogerli.octranspo.OCTranspoBusRouteActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".rogerli.octranspo.OCTranspoRouteDetails" />
-        <activity android:name=".rogerli.octranspo.DBHelper" />
         <activity android:name=".rogerli.octranspo.OCTranspoTripDetails" />
-        <activity android:name=".rogerli.octranspo.OCTranspoStopFragment" />
-        <activity android:name=".rogerli.octranspo.OCTranspoRouteFragment"></activity>
+        <activity android:name=".movie.MovieDetailActivity" />
+
+        <provider
+            android:name="com.example.amusu.teamname_cst2335_final_project.movie.MovieProvider"
+            android:authorities="com.example.amusu.provider"
+            android:enabled="true"
+            android:protectionLevel="signature"
+            android:exported="false" />
+
+     <!--   <activity android:name=".FoodNutrition.FoodFragment" />  -->
+        <activity android:name=".FoodNutrition.activity_food_help"></activity>
+
+>>>>>>> master
     </application>
 
 </manifest>
+

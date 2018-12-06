@@ -7,7 +7,6 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
@@ -29,9 +28,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.amusu.teamname_cst2335_final_project.CBCNewsReaderActivity;
-import com.example.amusu.teamname_cst2335_final_project.FoodNutritionDatabaseActivity;
+import com.example.amusu.teamname_cst2335_final_project.FoodNutrition.FoodMainActivity;
 import com.example.amusu.teamname_cst2335_final_project.MainActivity;
-import com.example.amusu.teamname_cst2335_final_project.MovieInformationActivity;
+import com.example.amusu.teamname_cst2335_final_project.movie.MovieInformationActivity;
 import com.example.amusu.teamname_cst2335_final_project.R;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -284,7 +283,7 @@ public class OCTranspoBusRouteActivity extends AppCompatActivity {
                 return true;
             case R.id.action_food:
                 Log.i("Toolbar", "going to food nutrition app");
-                startActivity(new Intent(OCTranspoBusRouteActivity.this, FoodNutritionDatabaseActivity.class));
+                startActivity(new Intent(OCTranspoBusRouteActivity.this, FoodMainActivity.class));
                 return true;
             case R.id.action_movie:
                 Log.i("Toolbar", "going to movie app");

@@ -1,7 +1,9 @@
-package com.example.amusu.teamname_cst2335_final_project;
+package com.example.amusu.teamname_cst2335_final_project.movie;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.example.amusu.teamname_cst2335_final_project.R;
 
 public class MovieListItemsActivity extends Activity {
 

@@ -13,9 +13,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.example.amusu.teamname_cst2335_final_project.CBCNewsReaderActivity;
-import com.example.amusu.teamname_cst2335_final_project.FoodNutritionDatabaseActivity;
+import com.example.amusu.teamname_cst2335_final_project.FoodNutrition.FoodMainActivity;
 import com.example.amusu.teamname_cst2335_final_project.MainActivity;
-import com.example.amusu.teamname_cst2335_final_project.MovieInformationActivity;
+import com.example.amusu.teamname_cst2335_final_project.movie.MovieInformationActivity;
 import com.example.amusu.teamname_cst2335_final_project.R;
 
 /**
@@ -76,7 +76,7 @@ public class OCTranspoRouteDetails extends AppCompatActivity {
                 return true;
             case R.id.action_food:
                 Log.i("Toolbar", "going to food nutrition app");
-                startActivity(new Intent(OCTranspoRouteDetails.this, FoodNutritionDatabaseActivity.class));
+                startActivity(new Intent(OCTranspoRouteDetails.this, FoodMainActivity.class));
                 return true;
             case R.id.action_movie:
                 Log.i("Toolbar", "going to movie app");

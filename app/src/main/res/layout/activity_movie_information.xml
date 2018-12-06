@@ -4,51 +4,150 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    tools:context=".MovieInformationActivity">
-    <!--android:orientation="horizontal"-->
+    android:orientation="vertical"
+    tools:context=".movie.MovieInformationActivity">
 
-
-    <RelativeLayout
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="35dp"
+        android:id="@+id/movie_toolbar"
+        android:visibility="visible">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/searchBtnID"
+            android:id="@+id/moviesearchButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/movie_searchBtnText"
-            android:layout_alignParentStart="true"
-            tools:layout_editor_absoluteX="103dp"
-            tools:layout_editor_absoluteY="87dp" />
+            android:icon="@drawable/food"
+            android:text="@string/movieSearchBtn"
+            android:textColor="#6b8e23"
+            />
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
 
-        <EditText
-            android:id="@+id/searchEditTextID"
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/customborder">
+
+        <SearchView
+            android:id="@+id/search_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/searchBtnID"
-            android:hint="     enter movie name">
-        </EditText>
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:queryHint="@string/movie_search_title"
+            android:textSize="20sp" >
 
-        <ListView
-            android:id="@+id/searchListViewID"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:layout_above="@+id/searchBtnID"/>
+        </SearchView>
 
-        <ProgressBar
-            android:id="@+id/progressBarID"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/searchEditTextID"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="0dp"
-            android:layout_marginBottom="212dp"
-            android:visibility="invisible" />
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:onClick="onClick"
+            android:src="@android:drawable/ic_menu_help"
+            android:contentDescription="@string/cd_help"
+            />
 
-    </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_movie_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_margin="10dp"
+        android:background="@drawable/customborder">
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/statistics"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shortest_runtime"
+                android:textSize="18sp"/>
+            <TextView android:id="@+id/shortest_runtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/average_runtime"
+                android:textSize="18sp"/>
+            <TextView android:id="@+id/average_runtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:text="@string/longest_runtime"
+                android:textSize="18sp"/>
+            <TextView android:id="@+id/longest_runtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <Button
+            android:id="@+id/backToMainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/movieBackToMain"
+            />
+    </LinearLayout>
+
 </LinearLayout>
