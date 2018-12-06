@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".rogerli.octranspo.OCTranspoRouteDetails">
+    tools:context=".rogerli.octranspo.OCTranspoTripDetails">
+
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,32 +23,26 @@
             />
 
     </android.support.design.widget.AppBarLayout>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/deleteStop_button"
-        android:text="@string/delete_stop_button_name"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button_return"
-        android:text="@string/octranspo_button_return"/>
+        android:id="@+id/return_button"
+        android:text="@string/octranspo_button_return"
+
+        />
 
     <ProgressBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/progress_bar"
-        android:layout_above="@+id/input_stop_number"
         android:visibility="invisible"
         android:layout_gravity="bottom"/>
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/route_listview"
+        android:id="@+id/trip_listview"
         />
-
-
 
 </LinearLayout>

@@ -1,6 +1,5 @@
 package com.example.amusu.teamname_cst2335_final_project;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -44,8 +43,8 @@ public class CBCNewsReaderActivity extends AppCompatActivity {
            public void onClick(View v) {
                AlertDialog.Builder builder = new AlertDialog.Builder(CBCNewsReaderActivity.this);
                builder.setMessage(R.string.dialog_message)
-                       .setTitle(R.string.dialog_title)
-                       .setPositiveButton(R.string.OK, new DialogInterface.OnClickListener() {
+                       .setTitle(R.string.octranspo_dialog_title)
+                       .setPositiveButton(R.string.octranspo_ok, new DialogInterface.OnClickListener() {
                            @Override
                            public void onClick(DialogInterface dialog, int which) {
                                Intent resultIntent = new Intent();
@@ -55,7 +54,7 @@ public class CBCNewsReaderActivity extends AppCompatActivity {
 
                            }
                        })
-                       .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                       .setNegativeButton(R.string.octranspo_cancel, new DialogInterface.OnClickListener() {
                            public void onClick(DialogInterface dialog, int id) {
 
                            }

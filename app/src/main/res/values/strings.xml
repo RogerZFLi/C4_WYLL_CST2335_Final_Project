@@ -4,16 +4,36 @@
     <string name="app2_name">CBC  News Reader</string>
     <string name="app3_name">Movie Information</string>
     <string name="app4_name">OCTranspo Bus Route</string>
-
-
     <string name="movie_searchBtnText">Search</string>
-
     <string name="CBC_btn1">Save</string>
     <string name="CBC_btn2">Search</string>
     <string name="CBC_btn3">back</string>
     <string name="dialog_message">Are you should you want to back to main page?</string>
-    <string name="dialog_title">Back to main</string>
+    <string name="octranspo_dialog_title">Back to main</string>
+    <string name="octranspo_dialog_details">Show Route details</string>
+    <string name="octranspo_dialog_trip_details">Show Trip details</string>
+    <string name="octranspo_ok">OK</string>
+    <string name="octranspo_cancel">Cancel</string>
+    <string name="octranspo_button_return">Return</string>
+    <string name="octranspo_search_history">Search History</string>
+    <string name="food_author">Food by Wang, Chao </string>
+    <string name="cbc_author">cbc by Yin, Jiahao </string>
+    <string name="movie_author">movie by Li, Jinlai </string>
+    <string name="octranspo_author">OCTranspo by Li, Roger </string>
+    <string name="input_hint">input stop number here</string>
+    <string name="search_button_name">Search</string>
+    <string name="delete_stop_button_name">Delete</string>
+    <string name="initial_input">stop number here</string>
 
-    <string name="OK">OK</string>
-    <string name="cancel">Cancel</string>
+
+
+
+    <string name="octranspo_show_search_history">Show Search History</string>
+    <string name="oc_transpo_hide_search_history">Hide Search History</string>
+    <string name="octranspo_info">Information of OCTranspo Bus Route</string>
+    <string name="octranspo_app_name">OCTranspo Searching Tool\n</string>
+    <string name="octranspo_app_version">Version: 1.0.0\n</string>
+    <string name="octranspo_details">Author: Roger Li \nStudent ID: 040896855</string>
+
+
 </resources>
