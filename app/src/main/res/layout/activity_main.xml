@@ -6,72 +6,75 @@
     android:layout_height="match_parent"
     android:rowCount="3"
     android:columnCount="2"
-    android:layout_columnWeight="1"
-
+    android:visibility="visible"
+    android:background="@color/colorBlack"
 
     tools:context=".MainActivity">
 
     <Toolbar
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="?android:attr/actionBarSize"
         android:orientation="horizontal"
         android:layout_columnSpan="2"
         android:title="@string/app_name"
+        android:titleTextColor="@color/colorWhite"
         android:layout_row="0"
         android:layout_column="0"
         android:layout_rowWeight="1"
+
         android:layout_gravity="center"
         />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app1_name"
+        android:background="@drawable/foodbig"
+        android:backgroundTintMode="add"
         android:id="@+id/food_nutrition_database"
         android:layout_row="1"
-        android:minWidth="170dp"
         android:textAllCaps="false"
         android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="3"
+        android:layout_rowWeight="2"
+        android:layout_gravity="center"
+
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app2_name"
+        android:background="@drawable/cbcbig"
+        android:backgroundTintMode="add"
         android:id="@+id/cbc_news_reader"
         android:layout_row="1"
-        android:minWidth="170dp"
         android:textAllCaps="false"
         android:layout_column="1"
-        android:layout_columnWeight="1"
-        android:layout_rowWeight="3"
-
+        android:layout_rowWeight="2"
+        android:layout_gravity="center"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app3_name"
+        android:background="@drawable/moviebig"
+        android:backgroundTintMode="add"
         android:id="@+id/movie_information"
         android:layout_row="2"
         android:textAllCaps="false"
         android:layout_column="0"
-        android:layout_columnWeight="1"
-        android:minWidth="170dp"
-        android:layout_rowWeight="3"
+        android:layout_gravity="center"
+        android:layout_rowWeight="2"
         />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app4_name"
+        android:background="@drawable/ocbig"
+        android:backgroundTintMode="add"
         android:id="@+id/octranspo_bus_route"
         android:layout_row="2"
-        android:minWidth="170dp"
         android:textAllCaps="false"
         android:layout_column="1"
-        android:layout_rowWeight="3"
-        android:layout_columnWeight="1"
+        android:layout_gravity="center"
+        android:layout_rowWeight="2"
+
         />
 
 

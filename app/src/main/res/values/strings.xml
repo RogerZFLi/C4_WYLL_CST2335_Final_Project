@@ -1,13 +1,39 @@
 <resources>
-    <string name="app_name">C4_CST2335_Final_Project</string>
+    <string name="app_name">CST2335_Final_Project</string>
     <string name="app1_name">Food Nutrition</string>
     <string name="app2_name">CBC  News Reader</string>
-    <string name="app3_name">Movies Information</string>
+    <string name="app3_name">Movie Information</string>
     <string name="app4_name">OCTranspo Bus Route</string>
+    <string name="movie_searchBtnText">Search</string>
     <string name="CBC_btn1">Save</string>
     <string name="CBC_btn2">Search</string>
     <string name="CBC_btn3">back</string>
     <string name="dialog_message">Are you should you want to back to main page?</string>
+    <string name="octranspo_dialog_title">Back to main</string>
+    <string name="octranspo_dialog_details">Show Route details</string>
+    <string name="octranspo_dialog_trip_details">Show Trip details</string>
+    <string name="octranspo_ok">OK</string>
+    <string name="octranspo_cancel">Cancel</string>
+    <string name="octranspo_button_return">Return</string>
+    <string name="octranspo_search_history">Search History</string>
+    <string name="food_author">Food by Wang, Chao </string>
+    <string name="cbc_author">cbc by Yin, Jiahao </string>
+    <string name="movie_author">movie by Li, Jinlai </string>
+    <string name="octranspo_author">OCTranspo by Li, Roger </string>
+    <string name="input_hint">input stop number here</string>
+    <string name="search_button_name">Search</string>
+    <string name="delete_stop_button_name">Delete</string>
+    <string name="initial_input">stop number here</string>
+
+
+    <string name="octranspo_show_search_history">Show Search History</string>
+    <string name="oc_transpo_hide_search_history">Hide Search History</string>
+    <string name="octranspo_info">Information of OCTranspo Bus Route</string>
+    <string name="octranspo_app_name">OCTranspo Searching Tool\n</string>
+    <string name="octranspo_app_version">Version: 1.0.0\n</string>
+    <string name="octranspo_details">Author: Roger Li \nStudent ID: 040896855</string>
+
+
     <string name="dialog_title">Back to main</string>
     <string name="cancel">cancel</string>
 
@@ -23,7 +49,51 @@
 
 
 
+    <string name="jsonDL">Json Data is downloading</string>
+    <string name="Error">Enter a valid food item name (eg: beef)</string>
+    <string name="authorInfo">Written by Chao Wang</string>
+    <string name="versionInfo">1.03</string>
+    <string name="instructionsFood">This app allows user to search for a certain food and display its information,
+        the user can also add their favorite food to the database by tap the button so that the data of that food can be retrived anytime.</string>
+    <string name="favAdded">Add food to favorites</string>
 
+
+    <string name="statistics">Statistics </string>
+    <string name="shortest_runtime">Shortest:  *</string>
+    <string name="average_runtime">Average:</string>
+    <string name="longest_runtime">Longest:</string>
+    <string name="runtime_summary">%1$d min,  %2$s, %3$s</string>
+    <string name="movie_title">Title</string>
+    <string name="movie_year">Year</string>
+    <string name="movie_plot">Plot</string>
+    <string name="movie_description">Description:</string>
+    <string name="save">save</string>
+    <string name="delete">delete</string>
+    <string name="aboutInfo">Author: Jinlai Li \nVersion: 1.0;  Date: 2018.12</string>
+    <string name="help">Instruction:</string>
+    <string name="movie_help_message">1. Enter movie name then press enter\n2. Click list item brings to details\n3. Long click item to delete</string>
+    <string name="cd_poster">poster</string>
+    <string name="cd_help">help</string>
+    <string name="cd_thumbnail">thumbnail</string>
+    <string name="runtime_average">%1$d min</string>
+    <string name="movie_confirm_delete">Are you sure to delete this movie %1$s?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="movie_runtime">Runtime</string>
+    <string name="movie_rating">Rating</string>
+    <string name="movie_actors">Actors</string>
+    <string name="ok">OK</string>
+    <string name="movie_search_title">Type movie name here</string>
+    <string name="movie_deleted">Movie %1$s deleted</string>
+    <string name="movie_not_found">Movie not found</string>
+    <string name="activity_Food">Food Nutrition</string>
+    <string name="activity_News">CBC News reader</string>
+    <string name="activity_Movie">Movie Information</string>
+    <string name="activity_Bus">OCTranspo Bus Route</string>
+    <string name="movie_about">About</string>
+    <string name="movieSearchBtn">movie search</string>
+    <string name="movieBackToMain">go back to main menu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 

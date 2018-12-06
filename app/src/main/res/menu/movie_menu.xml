@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <item
+        android:title="@string/activity_Movie"
+        android:orderInCategory="100"
+        android:id="@+id/movie_movie"
+        android:icon="@drawable/movie"
+        app:showAsAction="always"
+        />
+
+
+    <item
+        android:title="@string/activity_News"
+        android:orderInCategory="101"
+        android:id="@+id/movie_cbc"
+        android:icon="@drawable/cbcnews"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="@string/activity_Bus"
+        android:orderInCategory="102"
+        android:id="@+id/movie_bus"
+        android:icon="@drawable/octranspo"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="@string/activity_Food"
+        android:orderInCategory="103"
+        android:id="@+id/movie_food"
+        android:icon="@drawable/food"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:title="@string/movie_about"
+        android:orderInCategory="104"
+        android:id= "@+id/movie_about"/>
+
+
+</menu>

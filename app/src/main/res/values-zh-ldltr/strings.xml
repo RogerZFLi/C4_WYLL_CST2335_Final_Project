@@ -1,13 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">C4_CST2335_安卓项目</string>
+    <string name="app_name">CST2335_安卓项目</string>
     <string name="app1_name">食品营养数据库</string>
     <string name="app2_name">CBC新闻读取器</string>
     <string name="app3_name">电影信息</string>
     <string name="app4_name">OCTranspo公交路线</string>
+
+    <string name="movie_searchBtnText">搜索</string>
     <string name="CBC_btn1">保存</string>
     <string name="CBC_btn2">搜索</string>
     <string name="CBC_btn3">返回</string>
+
+    <string name="octranspo_cancel">取消</string>
+    <string name="octranspo_dialog_title">返回主页面</string>
+    <string name="octranspo_dialog_details">显示详细路线信息</string>
+    <string name="octranspo_dialog_trip_details">显示详细班次信息</string>
+    <string name="octranspo_ok">确定</string>
+    <string name="octranspo_button_return">返回</string>
+    <string name="octranspo_search_history">搜索记录</string>
+    <string name="food_author">食品营养数据库作者：王超 </string>
+    <string name="cbc_author">CBC新闻读取器作者：尹家豪 </string>
+    <string name="movie_author">电影信息作者：李金莱</string>
+    <string name="octranspo_author">OCTranspo公交路线作者：李振锋 </string>
+    <string name="input_hint">请在这里输入公交站编号</string>
+    <string name="search_button_name">搜索</string>
+    <string name="delete_stop_button_name">删除</string>
+    <string name="initial_input">输入公交站编号</string>
+
+
+    <string name="octranspo_show_search_history">显示搜索记录</string>
+    <string name="oc_transpo_hide_search_history">隐藏搜索记录</string>
+    <string name="octranspo_info">关于本软件</string>
+    <string name="octranspo_app_name">渥太华城市公交查询工具\n</string>
+    <string name="octranspo_app_version">版本: 1.0.0\n</string>
+
+
+    <string name="octranspo_details">作者: 李振锋 \n学生号: 040896855</string>
+
+
     <string name="dialog_message">确定要返回初始菜单吗</string>
     <string name="dialog_title">返回主菜单</string>
     <string name="cancel">取消</string>
@@ -20,5 +50,47 @@
 
 
 
+    <string name="jsonDL">数据下载中。。。</string>
+    <string name="Error">请输入有效的食品名称（比如： 牛肉）</string>
+    <string name="authorInfo">作者：王超</string>
+    <string name="versionInfo">1.03</string>
+    <string name="instructionsFood">欢迎来到食物营养数据库，用户可以通过本软件查询自己喜欢的食物并得到信息，点击过的食物将会被添加到数据库.</string>
+    <string name="favAdded">添加到收藏夹</string>
 
+    <string name="shortest_runtime">最短</string>
+    <string name="average_runtime">平均</string>
+    <string name="longest_runtime">最长</string>
+    <string name="runtime_summary">%1$d分鍾, %2$s, %3$s</string>
+    <string name="movie_title">片名</string>
+    <string name="movie_year">年份</string>
+    <string name="movie_plot">劇情</string>
+    <string name="movie_description">概述</string>
+    <string name="delete">刪除</string>
+    <string name="save">保存</string>
+    <string name="help">幫助</string>
+    <string name="aboutInfo">作者:: Jinlai Li; 版本: 1.0</string>
+    <string name="movie_help_message">使用:\n1. 单击显示详情\n2. 长按删除电影\n3. 输入片名搜索</string>
+    <string name="cd_poster">海报</string>
+    <string name="cd_help">帮助</string>
+    <string name="cd_thumbnail">简图</string>
+    <string name="runtime_average">%1$d分鍾</string>
+    <string name="movie_confirm_delete">确认删除电影 %1$s?</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="movie_runtime">片长</string>
+    <string name="movie_rating">影评</string>
+    <string name="movie_actors">演员</string>
+    <string name="ok">OK</string>
+    <string name="movie_search_title">搜索片名</string>
+    <string name="movie_deleted">电影 %1$s 删除</string>
+    <string name="movie_not_found">电影没有找到</string>
+    <string name="statistics">统计 </string>
+    <string name="activity_Food">食品数据</string>
+    <string name="activity_News">CBC新闻阅读</string>
+    <string name="activity_Movie">电影信息</string>
+    <string name="activity_Bus">OCTranspo公交线路</string>
+    <string name="movie_about">关于</string>
+    <string name="movieSearchBtn">搜索电影</string>
+    <string name="movieBackToMain">回主菜单</string>
+    <string name="hello_blank_fragment">你好片断</string>
 </resources>
