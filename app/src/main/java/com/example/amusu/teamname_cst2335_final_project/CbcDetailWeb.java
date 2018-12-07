@@ -4,9 +4,15 @@ package com.example.amusu.teamname_cst2335_final_project;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+/**
+ * this class is link to show the web interface
+ * https://www.cnblogs.com/demongao/p/6229013.html
+ * https://blog.csdn.net/qq_36990613/article/details/80774160
+ * https://developer.android.com/guide/webapps/webview
+ */
 
 public class CbcDetailWeb extends AppCompatActivity {
     private WebView webView;
@@ -17,39 +23,17 @@ public class CbcDetailWeb extends AppCompatActivity {
         setContentView(R.layout.activity_detail_web);
         webView = findViewById(R.id.webView);
         String url = getIntent().getStringExtra("url");
-        String type = getIntent().getStringExtra("type");
-        loadWeb(webView, url, type);
+        loadWeb(webView, url);
     }
+    /**
+     * Load URL method definition
+     * @param web
+     * @param url
+     */
 
+    public static void loadWeb(WebView web, String url) {
 
-    public static void loadWeb(WebView web, String url, String type) {
-        WebSettings webSettings = web.getSettings();
-        // set WebView property which can run the Javascript
-        webSettings.setJavaScriptEnabled(true);
-        // allow to access the file
-        webSettings.setAllowFileAccess(true);
-        // enable zoom in and out
-        webSettings.setBuiltInZoomControls(true);
-        // enable cache mode
-        webSettings.setCacheMode(WebSettings.LOAD_DEFAULT);
-        // enable DOM storage API
-        webSettings.setDomStorageEnabled(true);
-
-        //make it no zoom
-        webSettings.setSupportZoom(true);
-
-
-        // set screen overview
-        webSettings.setUseWideViewPort(true);
-        webSettings.setLoadWithOverviewMode(true);
-
-        webSettings.setDefaultTextEncodingName("UTF-8");
-        if (type.equals("1")) {
-            web.loadUrl(url);//
-        } else {
-            web.loadData(url, "text/html; charset=UTF-8", null);
-        }
-
+        web.loadUrl(url);
         web.setWebViewClient(new WebViewClient() {
 
             @Override

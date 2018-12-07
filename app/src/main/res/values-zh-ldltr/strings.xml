@@ -8,8 +8,8 @@
 
     <string name="movie_searchBtnText">搜索</string>
     <string name="CBC_btn1">保存</string>
-    <string name="CBC_btn2">搜索</string>
-    <string name="CBC_btn3">返回</string>
+    <string name="CBC_btn2">返回</string>
+    <string name="CBC_btn3">进入CBC新闻读取器</string>
 
     <string name="octranspo_cancel">取消</string>
     <string name="octranspo_dialog_title">返回主页面</string>

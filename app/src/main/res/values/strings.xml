@@ -6,8 +6,8 @@
     <string name="app4_name">OCTranspo Bus Route</string>
     <string name="movie_searchBtnText">Search</string>
     <string name="CBC_btn1">Save</string>
-    <string name="CBC_btn2">Search</string>
-    <string name="CBC_btn3">back</string>
+    <string name="CBC_btn2">Back</string>
+    <string name="CBC_btn3">Enter CBC Reader</string>
     <string name="dialog_message">Are you should you want to back to main page?</string>
     <string name="octranspo_dialog_title">Back to main</string>
     <string name="octranspo_dialog_details">Show Route details</string>

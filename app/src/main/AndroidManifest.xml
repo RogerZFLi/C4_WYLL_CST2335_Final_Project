@@ -66,6 +66,9 @@
 
      <!--   <activity android:name=".FoodNutrition.FoodFragment" />  -->
         <activity android:name=".FoodNutrition.activity_food_help"></activity>
+        <activity
+            android:name=".CbcDesWeb"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
 
 
     </application>

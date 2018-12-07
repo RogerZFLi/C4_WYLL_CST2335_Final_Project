@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
         CBC_NEWS_READER.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,CBCMainActivity.class));
+                startActivity(new Intent(MainActivity.this,CBCNewsReaderActivity.class));
             }
         });
 

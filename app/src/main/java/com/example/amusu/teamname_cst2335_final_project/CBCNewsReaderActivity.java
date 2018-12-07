@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.amusu.teamname_cst2335_final_project.FoodNutrition.FoodMainActivity;
+
 public class CBCNewsReaderActivity extends AppCompatActivity {
 
     @Override
@@ -26,6 +28,15 @@ public class CBCNewsReaderActivity extends AppCompatActivity {
                         Toast.LENGTH_LONG).show();
             }
         });
+        Button button1 = (Button) findViewById(R.id.quit_button);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CBCNewsReaderActivity.this.finish();
+
+            }
+        });
+
 
 
 
@@ -38,36 +49,13 @@ public class CBCNewsReaderActivity extends AppCompatActivity {
             }
         });
        Button button3 = (Button) findViewById(R.id.back_button);
-       button3.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               AlertDialog.Builder builder = new AlertDialog.Builder(CBCNewsReaderActivity.this);
-               builder.setMessage(R.string.dialog_message)
-                       .setTitle(R.string.octranspo_dialog_title)
-                       .setPositiveButton(R.string.octranspo_ok, new DialogInterface.OnClickListener() {
-                           @Override
-                           public void onClick(DialogInterface dialog, int which) {
-                               Intent resultIntent = new Intent();
-                               resultIntent.putExtra("Dialog", "Back");
-                               setResult(MainActivity.RESULT_OK, resultIntent);
-                               finish();
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(CBCNewsReaderActivity.this,CBCMainActivity.class));
+            }
+        });
 
-                           }
-                       })
-                       .setNegativeButton(R.string.octranspo_cancel, new DialogInterface.OnClickListener() {
-                           public void onClick(DialogInterface dialog, int id) {
-
-                           }
-                       })
-                       .show();
-
-
-
-           }
-       });
-
-//        Intent intent = new Intent(CBCNewsReaderActivity.this,MainActivity.class);
-//        startActivity(intent);
 
 
     }

@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 
 
 public class CBClocalTotalActivity extends AppCompatActivity {
-
+    /**
+     * Statistical interface, mainly for loading fragment
+     */
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

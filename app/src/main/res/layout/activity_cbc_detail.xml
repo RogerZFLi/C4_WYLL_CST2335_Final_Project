@@ -86,23 +86,10 @@
                 android:id="@+id/link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/CBC_GOLINK" />
+                android:text="Go Link" />
 
         </TableRow>
 
-        <TableRow>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="image:" />
-
-            <Button
-                android:id="@+id/goDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/CBC_image" />
-        </TableRow>
 
         <TableRow>
 
@@ -110,15 +97,14 @@
                 android:id="@+id/add"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/CBC_addnews"
-                 />
+                android:text="ADD" />
 
             <Button
                 android:id="@+id/statistical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="@string/CBC_statistical"/>
+                android:text="statistical" />
 
 
         </TableRow>
